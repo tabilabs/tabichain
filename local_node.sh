@@ -12,7 +12,7 @@ KEYRING="test"
 KEYALGO="eth_secp256k1"
 LOGLEVEL="info"
 # Set dedicated home directory for the evmosd instance
-HOMEDIR="/data/.tmp-evmosd"
+HOMEDIR="$HOME/.tmp-evmosd"
 # to trace evm
 #TRACE="--trace"
 TRACE=""
