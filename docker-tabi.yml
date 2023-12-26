@@ -9,7 +9,7 @@ services:
     volumes:
       - ./build/evmos-testnet-tabi/node0/evmosd:/evmos:Z
     command:
-      - evmosd start --home /evmos
+      - /bin/bash
     networks:
       localnet:
         ipv4_address: 192.167.10.2
@@ -22,7 +22,7 @@ services:
     volumes:
       - ./build/evmos-testnet-tabi/node1/evmosd:/evmos:Z
     command:
-      - evmosd start --home /evmos
+      - /bin/bash
     networks:
       localnet:
         ipv4_address: 192.167.10.3
@@ -35,7 +35,7 @@ services:
     volumes:
       - ./build/evmos-testnet-tabi/node2/evmosd:/evmos:Z
     command:
-      - evmosd start --home /evmos
+      - /bin/bash
     networks:
       localnet:
         ipv4_address: 192.167.10.4
@@ -48,7 +48,7 @@ services:
     volumes:
       - ./build/evmos-testnet-tabi/node3/evmosd:/evmos:Z
     command:
-      - evmosd start --home /evmos
+      - /bin/bash
     networks:
       localnet:
         ipv4_address: 192.167.10.5
@@ -61,7 +61,7 @@ services:
     volumes:
       - ./build/evmos-testnet-tabi/node4/evmosd:/evmos:Z
     command:
-      - evmosd start --home /evmos
+      - /bin/bash
     networks:
       localnet:
         ipv4_address: 192.167.10.6
@@ -74,7 +74,7 @@ services:
     volumes:
       - ./build/evmos-testnet-tabi/node5/evmosd:/evmos:Z
     command:
-      - evmosd start --home /evmos
+      - /bin/bash
     networks:
       localnet:
         ipv4_address: 192.167.10.7
@@ -87,7 +87,7 @@ services:
     volumes:
       - ./build/evmos-testnet-tabi/node6/evmosd:/evmos:Z
     command:
-      - evmosd start --home /evmos
+      - /bin/bash
     networks:
       localnet:
         ipv4_address: 192.167.10.8
@@ -100,7 +100,7 @@ services:
     volumes:
       - ./build/evmos-testnet-tabi/node7/evmosd:/evmos:Z
     command:
-      - evmosd start --home /evmos
+      - /bin/bash
     networks:
       localnet:
         ipv4_address: 192.167.10.9
