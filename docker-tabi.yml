@@ -6,6 +6,7 @@ services:
     image: "webbshi/evmosd"
     ports:
       - "26656-26657:26656-26657"
+      - "8045-8046:8545-8546"
     volumes:
       - /data/evmostabi/node0/evmosd:/evmos:Z
     command: sh -c "evmosd start --home /evmos"
