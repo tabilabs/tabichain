@@ -3,7 +3,7 @@ version: '3'
 services:
   node0:
     container_name: evmosnode0
-    image: "evmos/node"
+    image: "webbshi/evmosd"
     ports:
       - "26656-26657:26656-26657"
     volumes:
@@ -16,7 +16,7 @@ services:
 
   node1:
     container_name: evmosnode1
-    image: "evmos/node"
+    image: "webbshi/evmosd"
     ports:
       - "26659-26660:26656-26657"
     volumes:
@@ -29,7 +29,7 @@ services:
 
   node2:
     container_name: evmosnode2
-    image: "evmos/node"
+    image: "webbshi/evmosd"
     ports:
       - "26661-26662:26656-26657"
     volumes:
@@ -42,7 +42,7 @@ services:
 
   node3:
     container_name: evmosnode3
-    image: "evmos/node"
+    image: "webbshi/evmosd"
     ports:
       - "26663-26664:26656-26657"
     volumes:
@@ -55,7 +55,7 @@ services:
 
   node4:
     container_name: evmosnode4
-    image: "evmos/node"
+    image: "webbshi/evmosd"
     ports:
       - "36656-36657:26656-26657"
     volumes:
@@ -68,7 +68,7 @@ services:
 
   node5:
     container_name: evmosnode5
-    image: "evmos/node"
+    image: "webbshi/evmosd"
     ports:
       - "36659-36660:26656-26657"
     volumes:
@@ -81,7 +81,7 @@ services:
 
   node6:
     container_name: evmosnode6
-    image: "evmos/node"
+    image: "webbshi/evmosd"
     ports:
       - "36661-36662:26656-26657"
     volumes:
@@ -94,7 +94,7 @@ services:
 
   node7:
     container_name: evmosnode7
-    image: "evmos/node"
+    image: "webbshi/evmosd"
     ports:
       - "36663-36664:26656-26657"
     volumes:
