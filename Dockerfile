@@ -20,4 +20,4 @@ COPY --from=build-env /go/src/github.com/brucedata2/evmos/build/evmosd /usr/bin/
 
 EXPOSE 26656 26657 1317 9090 8545 8546
 
-CMD ["/bin/bash"]
+CMD ["evmosd"]
