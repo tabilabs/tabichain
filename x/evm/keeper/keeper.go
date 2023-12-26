@@ -16,6 +16,7 @@
 package keeper
 
 import (
+	"fmt"
 	"math/big"
 
 	errorsmod "cosmossdk.io/errors"
@@ -126,6 +127,9 @@ func (k *Keeper) WithChainID(ctx sdk.Context) {
 		panic("chain id already set")
 	}
 
+	fmt.Println("----------try to debug begin------------")
+	fmt.Println(chainID)
+	fmt.Println("----------try to debug end------------")
 	if !(chainID.Cmp(big.NewInt(9001)) == 0 || chainID.Cmp(big.NewInt(9000)) == 0) {
 		panic("EVM only supports Evmos chain identifiers (9000 or 9001)")
 	}
