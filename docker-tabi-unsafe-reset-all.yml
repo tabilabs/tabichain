@@ -9,7 +9,7 @@ services:
       - "8045-8046:8545-8546"
     volumes:
       - ./chainData/evmostabi/node0/evmosd:/evmos:Z
-    command: sh -c "evmosd start --home /evmos"
+    command: sh -c "evmosd tendermint unsafe-reset-all  --home /evmos"
     networks:
       localnet:
         ipv4_address: 192.167.10.2
@@ -21,7 +21,7 @@ services:
       - "26659-26660:26656-26657"
     volumes:
       - ./chainData/evmostabi/node1/evmosd:/evmos:Z
-    command: sh -c "evmosd start --home /evmos"
+    command: sh -c "evmosd tendermint unsafe-reset-all  --home /evmos"
     networks:
       localnet:
         ipv4_address: 192.167.10.3
@@ -33,7 +33,7 @@ services:
       - "26661-26662:26656-26657"
     volumes:
       - ./chainData/evmostabi/node2/evmosd:/evmos:Z
-    command: sh -c "evmosd start --home /evmos"
+    command: sh -c "evmosd tendermint unsafe-reset-all  --home /evmos"
     networks:
       localnet:
         ipv4_address: 192.167.10.4
@@ -45,7 +45,7 @@ services:
       - "26663-26664:26656-26657"
     volumes:
       - ./chainData/evmostabi/node3/evmosd:/evmos:Z
-    command: sh -c "evmosd start --home /evmos"
+    command: sh -c "evmosd tendermint unsafe-reset-all  --home /evmos"
     networks:
       localnet:
         ipv4_address: 192.167.10.5
@@ -57,7 +57,7 @@ services:
       - "36656-36657:26656-26657"
     volumes:
       - ./chainData/evmostabi/node4/evmosd:/evmos:Z
-    command: sh -c "evmosd start --home /evmos"
+    command: sh -c "evmosd tendermint unsafe-reset-all  --home /evmos"
     networks:
       localnet:
         ipv4_address: 192.167.10.6
@@ -69,7 +69,7 @@ services:
       - "36659-36660:26656-26657"
     volumes:
       - ./chainData/evmostabi/node5/evmosd:/evmos:Z
-    command: sh -c "evmosd start --home /evmos"
+    command: sh -c "evmosd tendermint unsafe-reset-all  --home /evmos"
     networks:
       localnet:
         ipv4_address: 192.167.10.7
@@ -81,7 +81,7 @@ services:
       - "36661-36662:26656-26657"
     volumes:
       - ./chainData/evmostabi/node6/evmosd:/evmos:Z
-    command: sh -c "evmosd start --home /evmos"
+    command: sh -c "evmosd tendermint unsafe-reset-all  --home /evmos"
     networks:
       localnet:
         ipv4_address: 192.167.10.8
@@ -93,7 +93,7 @@ services:
       - "36663-36664:26656-26657"
     volumes:
       - ./chainData/evmostabi/node7/evmosd:/evmos:Z
-    command: sh -c "evmosd start --home /evmos"
+    command: sh -c "evmosd tendermint unsafe-reset-all  --home /evmos"
     networks:
       localnet:
         ipv4_address: 192.167.10.9
