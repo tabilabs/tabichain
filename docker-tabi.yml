@@ -6,7 +6,7 @@ services:
     image: "webbshi/evmosd"
     ports:
       - "26656-26657:26656-26657"
-      - "8045-8046:8545-8546"
+      - "8545-8546:8545-8546"
     volumes:
       - ./chainData/evmostabi/node0/evmosd:/evmos:Z
     command: sh -c "evmosd start --home /evmos"
@@ -19,6 +19,7 @@ services:
     image: "webbshi/evmosd"
     ports:
       - "26659-26660:26656-26657"
+      - "8045-8046:8545-8546"
     volumes:
       - ./chainData/evmostabi/node1/evmosd:/evmos:Z
     command: sh -c "evmosd start --home /evmos"

@@ -14,7 +14,7 @@ rm -rf ./chainData/evmostabi
 
 change the profile:
 ```shell
-
+./cluster_local.sh
 ```
 
 ```shell
