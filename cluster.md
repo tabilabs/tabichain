@@ -29,6 +29,7 @@ docker-compose -f docker-tabi.yml up -d
 
 ```shell
 docker-compose -f docker-tabi.yml down
+./clean_data.sh
 ```
 
 ```shell
