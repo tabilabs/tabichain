@@ -16,7 +16,7 @@ RUN apt-get install ca-certificates jq -y
 
 WORKDIR /root
 
-COPY --from=build-env /go/src/github.com/tabilabs/tabichain/build/tabid /usr/bin/tabid
+COPY --from=build-env /go/src/github.com/tabilabs/tabichain/build/evmosd /usr/bin/tabid
 
 EXPOSE 26656 26657 1317 9090 8545 8546
 
