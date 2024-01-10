@@ -1,7 +1,7 @@
 ### build dockerfile
 
 rm -rf ./chainData/tabi
-../../build/evmosd testnet init-files --v 8 -o ./chainData/tabi --keyring-backend=test --starting-ip-address 192.167.10.2 --chain-id evmos_9000-1
+../../build/evmosd testnet init-files --v 8 -o ./chainData/tabi --keyring-backend=test --starting-ip-address 192.167.10.2 --chain-id tabi_9789-1
 
   for i in {0..7}; do
     APP_TOML="./chainData/tabi/node$i/evmosd/config/app.toml"
